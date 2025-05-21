@@ -4,6 +4,15 @@ import loginPage from '../pageobjects/login.page.js'
 import profilePage from '../pageobjects/profile.page.js'
 
 describe('My Login application', () => {
+
+    /*before(async () => {
+        // Aguarda o browser estar pronto
+        await browser.waitUntil(
+            async () => (await browser.getPageSource()).includes('android.widget'),
+            { timeout: 15000 }
+        );
+    });*/
+
     it('should login with valid credentials', async () => {
         await homePage.openMenu('profile')
         await loginPage.login('cliente@ebac.art.br', 'GD*peToHNJ1#c$sgk08EaYJQ')
