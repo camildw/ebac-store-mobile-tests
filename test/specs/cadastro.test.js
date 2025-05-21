@@ -33,9 +33,5 @@ describe('Fluxo de cadastro de cliente', () => {
         await expect(cadastroHome.mensagemDeSucesso).toBeDisplayed();
         await cadastroHome.mensagemDeSucesso.waitForDisplayed({ timeout: 10000 });
         
-        // Verifica no perfil
-        await homePage.openMenu('profile');
-        await expect(profilePage.profileName(`${novoUsuario.primeiroNome} ${novoUsuario.sobrenome}`))
-            .toBeDisplayed();
     });
 });

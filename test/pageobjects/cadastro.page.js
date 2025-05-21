@@ -24,7 +24,7 @@ class cadastroHome {
         return $('android=new UiSelector().text("Create")'); 
     }
     get mensagemDeSucesso() { 
-        return $('android=new UiSelector().textContains("success")'); 
+        return $('android=new UiSelector().textContains("Olá Fulano")'); 
     }
 
     async registroCompleto(novoUsuario) {

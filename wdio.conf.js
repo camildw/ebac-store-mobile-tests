@@ -26,7 +26,7 @@ export const config = {
     ],
     
     capabilities: [
-        /*{
+        {
         platformName: 'Android',
         'appium:deviceName': 'ebac',
         'appium:platformVersion': '11.0',
@@ -34,13 +34,13 @@ export const config = {
         'appium:app': `${process.cwd()}/app/ebacshop.apks`,
         'appium:appWaitActivity': '.MainActivity',
         'appium:disableIdLocatorAutocompletion': true,
-        }*/
+        }
 
-       {
+       /*{
         platformName: 'Android',
         'appium:app': 'storage:filename=ebacshop.aab', // The filename of the mobile app
-        'appium:deviceName': 'Samsung.*',
-        'appium:platformVersion': '10',
+        'appium:deviceName': 'Samsung Galaxy Tab S6 GoogleAPI Emulator',
+        'appium:platformVersion': '12.0',
         'appium:automationName': 'UiAutomator2',
         'sauce:options': {
             build: 'appium-build-teste-ebacshop',
@@ -48,7 +48,7 @@ export const config = {
             deviceOrientation: 'PORTRAIT',
             appiumVersio: '2.0.0',
             },
-        }
+        }*/
     ],
     
     logLevel: 'info',    
